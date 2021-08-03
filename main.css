@@ -1,0 +1,423 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  min-height: 100vh;
+}
+hr {
+  color: red;
+}
+/* header */
+header {
+  background-image: url(./images/food/Banner.jpg);
+  opacity: 1;
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(193, 245, 73, 0.9);
+  height: 9%;
+  width: 100%;
+  padding: 7px 95px 0px 95px;
+  position: fixed;
+}
+
+.brand {
+  display: flex;
+  justify-content: flex-end;
+  position: center;
+}
+.logo img {
+  height: 35px;
+  width: 35px;
+  border-radius: 20px;
+  border: 0.5px solid yellow;
+  margin-right: 15px;
+  margin-top: 4px;
+}
+
+.brand-title {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: lightcoral;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+/* .brand-title span {
+  font-style: italic;
+} */
+
+.first {
+  color: rgb(6, 2, 252);
+}
+
+.second {
+  color: rgb(25, 240, 107);
+}
+
+.italic-fancsy {
+  font-style: italic;
+  font-family: cursive;
+  color: rgb(238, 71, 71);
+}
+
+.navigation {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.navigation li {
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: aliceblue;
+}
+
+.navigation li a {
+  text-decoration: none;
+  color: rgb(243, 89, 18);
+}
+
+.intro-header {
+  display: flex;
+  padding: 200px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 90vh;
+}
+
+.title-heading {
+  align-items: center;
+  background: rgba(167, 255, 4, 0.527);
+}
+
+.title-heading h1 {
+  color: rgb(255, 7, 201);
+  font-size: 50px;
+}
+
+.title-heading p {
+  font-size: 30px;
+
+  font-style: italic;
+  text-align: center;
+}
+.title-heading button {
+  margin-top: 60px;
+  margin-left: 43%;
+  height: 40px;
+  width: 90px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  background-color: aqua;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: black;
+  cursor: pointer;
+}
+button:hover {
+  background-color: transparent;
+  color: white;
+}
+
+/* modal properties css */
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.35);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.2s ease-in-out;
+}
+.modal {
+  background-color: rgb(87, 250, 54);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  padding: 30px 50px;
+  width: 500px;
+}
+
+.modal h1,
+.modal p {
+  margin-bottom: 10px;
+}
+.modal button {
+  margin-top: 20px;
+  height: 40px;
+  width: 90px;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+  background-color: aqua;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: black;
+}
+
+/* The dynamic style */
+.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+/* the first section ends here */
+
+/* The about section start here */
+.about {
+  padding: 55px 100px;
+  background: rgba(15, 243, 213, 0.753);
+  /* background-image: url(./images/food/Background_3.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; */
+}
+.about h2 {
+  text-transform: uppercase;
+  color: rgb(226, 4, 255);
+  text-align: center;
+  margin-top: 60px;
+  font-size: 30px;
+  width: 600px;
+  margin-left: 260px;
+}
+.about-row {
+  display: flex;
+  justify-content: space-between;
+}
+.col-md-4 {
+  margin: 30px;
+  text-align: center;
+  background: rgba(198, 245, 124, 0.5);
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+}
+.col-md-4 img {
+  margin: 10px 0px;
+}
+
+/* the about section end here */
+
+/* food section */
+.food {
+  padding: 55px 100px;
+  background: rgba(179, 202, 231, 0.5);
+  /* height: 100vh; */
+}
+.food h3 {
+  text-transform: uppercase;
+  color: rgb(226, 4, 255);
+  text-align: center;
+  margin-top: 20px;
+  font-size: 35px;
+}
+.food-row {
+  display: flex;
+  justify-content: space-between;
+}
+.col-md-3 {
+  width: 380px;
+  margin: 15px;
+  height: 300px;
+  background-color: rgba(45, 157, 185, 0.37);
+  /* border: 1px solid black; */
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.692);
+}
+.col-md-3 img {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+/* food secton ends here */
+
+/* gallery section start here */
+.gallery {
+  padding: 55px 100px;
+  text-align: center;
+  background-color: rgba(24, 212, 236, 0.685);
+}
+.gallery h3 {
+  font-size: 35px;
+  color: rgb(4, 27, 4);
+}
+.gallery-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.img-container {
+  margin: 10px;
+}
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  /* margin: 10px; */
+}
+.modal-1 {
+  background-color: rgba(73, 225, 236, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.full-img {
+  position: absolute;
+  height: 85%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.5);
+  transition: all 0.1s ease-in-out;
+}
+
+/* Dynamic Classes */
+.full-img.open-1 {
+  transform: translate(-50%, -50%) scale(1);
+}
+.modal-1.open-1 {
+  opacity: 1;
+  pointer-events: all;
+}
+
+/* gallery section end here */
+
+/* contact style start here */
+.contact {
+  padding: 0px 100px;
+  text-align: center;
+  background-image: url(./images/food/Background_1.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  display: block;
+}
+.contact h3 {
+  padding-top: 55px;
+  font-size: 35px;
+  color: rgb(4, 27, 4);
+  text-transform: uppercase;
+  /* background-color: aquamarine; */
+}
+.form-input {
+  background-color: rgba(138, 230, 17, 0.521);
+  margin: 50px;
+  border-radius: 10px;
+  width: 350px;
+  height: 450px;
+  margin-left: 390px;
+}
+.input input {
+  margin: 5px;
+  width: 90%;
+  height: 35px;
+  border-radius: 10px;
+  border: none;
+}
+.input textarea {
+  margin-top: 10px;
+  width: 90%;
+  height: 200px;
+  border-radius: 20px;
+  border: none;
+}
+.input button {
+  margin-top: 20px;
+  height: 40px;
+  width: 70px;
+  border-radius: 9px;
+  border: none;
+  color: blue;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: greenyellow;
+  cursor: pointer;
+}
+/* contact style ends here */
+
+/* Addresss */
+.address {
+  height: 38vh;
+  background-color: rgb(8, 8, 8);
+  text-align: center;
+  padding: 0px 100px;
+}
+.address-form h3 {
+  padding-top: 55px;
+  font-size: 35px;
+  color: rgb(199, 202, 199);
+  text-transform: uppercase;
+}
+.address-form p {
+  margin-top: 10px;
+  color: aliceblue;
+}
+.social-icons {
+  align-items: center;
+}
+.social-icons ul {
+  display: flex;
+  margin-top: 20px;
+  margin-left: 490px;
+}
+.social-icons ul li {
+  list-style: none;
+  margin-left: 15px;
+}
+.top-navs ul {
+  display: flex;
+  margin-top: 20px;
+  margin-left: 395px;
+}
+.top-navs ul li {
+  list-style: none;
+  margin-left: 15px;
+  text-decoration: none;
+}
+.top-navs ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: aliceblue;
+}
+.footer {
+  background-color: chartreuse;
+  text-align: center;
+}
+/* ends here */
+
+/* nav effect style */
+/* It will be used to be dynamic */
+.trans {
+  position: absolute;
+  z-index: -10;
+  background-color: coral;
+  color: white;
+}
